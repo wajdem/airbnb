@@ -1,0 +1,115 @@
+
+.container {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+header .logo {
+    flex: 1;
+}
+header .logo img {
+    height: 67px;
+}
+header .search {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+header .search .sbox {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    padding: 10px 0px;
+    border-radius: 90px;
+    align-items: center;
+}
+header .search .sbox p{
+    padding: 0px 15px;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px 5px;
+}
+header .search .sbox .gray{
+    padding: 0px 15px;
+    font-weight: normal;
+    color: gray;
+}
+header .search .sbox p i {
+    background-color: var(--main-color);
+    color: white;
+    padding: 8px;
+    margin-right: -8px;
+    margin-left: 10px;
+    font-size: 14px;
+    border-radius: 50%;
+    
+}
+header .assets {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .assets div {
+    margin: 0px 10px;
+    font-size: 14px;
+}
+header .assets .profile {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 2px;
+    padding: 10px 8px;
+    border-radius: 50px;
+}
+header .assets .profile i{
+    padding: 0px 5px;
+}
+.filter .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.filter .items .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.selected {
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+.filter .items .item img{
+    width: 20px;
+    margin-bottom: 10px;
+}
+.filter .items .item p{
+    font-size: 15px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap: 30px;
+}
+.cards .card {
+    line-height: 1.5;
+}
+.cards .card img{
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.cards .card .title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+}
+.cards .card > p {
+    color: gray;
+}
